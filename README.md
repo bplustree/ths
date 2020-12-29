@@ -6,22 +6,22 @@
 
 #### 2 How to use
 
-Assume the **runnable** JAR file of Simple HTTP Server named simplehttpserver.jar is located in `/path/to/jar/`, and your own request handler `YourHandler.class` with fully qualified name `com.yourcompany.yourname.YourHandler` is put in directory `/your/own/path/com/yourcompany/yourname/`, you can run:
+Assume the **runnable** JAR file of Simple HTTP Server named `ths.jar` is located in `/path/to/jar/`, and your own request handler `YourHandler.class` with fully qualified name `com.yourcompany.yourname.YourHandler` is put in directory `/your/own/path/com/yourcompany/yourname/`, you can run:
 
 ```shell
 java -cp /your/own/path \
- -jar /path/to/jar/simplehttpserver.jar \
- -Dserver.request.handler=com.yourcompany.yourname.YourHandler
+ -Dserver.request.handler=com.yourcompany.yourname.YourHandler \
+ -jar /path/to/jar/ths.jar
 ```
 
 or with more parameters:
 
 ```shell
 java -cp /your/own/path \
- -jar /path/to/jar/simplehttpserver.jar \
  -Dserver.port=9000 \
- -Dserver.name=SimpleHttpServer \
+ -Dserver.name=THS \
  -Dserver.request.handler=com.yourcompany.yourname.YourHandler
+ -jar /path/to/jar/ths.jar
 ```
 
 to start the server.

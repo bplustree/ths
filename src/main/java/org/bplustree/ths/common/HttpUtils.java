@@ -37,7 +37,7 @@ public class HttpUtils {
         scanner.close();
 
         Properties p = new Properties();
-        in = ClassLoader.getSystemClassLoader().getResourceAsStream("org.bplustree.ths/server.properties");
+        in = ClassLoader.getSystemClassLoader().getResourceAsStream("org/bplustree/ths/server.properties");
         try {
             p.load(in);
         } catch (IOException e) {
